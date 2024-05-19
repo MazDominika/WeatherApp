@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #56758F;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    justify-content: row;
+    box-shadow: 0 0 60px #56758F ;
+}
+ 
+.LogoImg{
+    height: 110px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button{
+    background-color:  #FADE3F;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    cursor: pointer;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.15s;
+}
+
+button:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.ManualControlBtn{
+    min-width: 180px;
+}
+
+.SensorMeasurmentsBtn{
+    min-width: 210px;
+}
+
+.LoginBtn{
+    min-width: 100px;
+}

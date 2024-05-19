@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Weather Station</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/loginpage.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/sensormeasurmentspage.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <div> 
+            <img class = "LogoImg" src = "{{ url_for('static', filename='images/logo.png') }}" >
+        </div>
+        <div style="width: auto;"><button class = "SensorMeasurmentsBtn" onclick="window.location.href='/sensormeasurments'" >Sensor Measurments</button></div>
+        <div style="width: auto;"><button class = "ManualControlBtn" class = "LoginBtn" onclick="window.location.href='/manualcontrol'">Manual Control</Canvas></button></div>
+        
+        <div style="flex:1; text-align: right;">
+            {% if current_user.is_anonymous %}
+            <button class = "LoginBtn" onclick="window.location.href='/login'">Login</button>
+            {%else%}
+            <button class = "LoginBtn" onclick="window.location.href='/logout'">Logout</button>
+            {% endif %}
+        </div>       
+    </div>
+    </body>
+    {% block content %}{% endblock %}
+</body>
+</html>

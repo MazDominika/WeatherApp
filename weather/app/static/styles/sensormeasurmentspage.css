@@ -1,0 +1,37 @@
+
+table{
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+th{
+    padding: 15px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+    background-color: #56758F;
+    color: white;
+}
+
+
+tr{
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+tr:hover{
+    background-color:  #56758F;
+    color: white
+}
+
+.page{
+    display: flex;
+}
+

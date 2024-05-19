@@ -1,0 +1,28 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+<div style="display: flex; justify-content: center;">
+    <div class = "LoginForm">
+        <form action="login" method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-username">
+                {{ form.username.label(class = "usernameLabel") }}
+                {{ form.username(class = "usernameTextBlock", placeholder = "Enter your username") }}
+              </div>
+              <div class="form-password">
+                {{ form.password.label(class = "passwordLabel") }}
+                {{ form.password(class = "passwordTextBlock", placeholder = "Enter your password") }}
+              </div>
+              <div class="form-rememberme">
+                {{ form.remember_me.label(class = "remembermeLabel")}}
+                {{ form.remember_me()}}
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="form-login">
+                {{form.submit(class = "SubmitBtn")}}
+              </div>
+        </form>
+        
+</div>
+{% endblock %}
